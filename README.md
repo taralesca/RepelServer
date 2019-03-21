@@ -1,3 +1,3 @@
 # Repel_Server
 
-Build cu ./gradlew build pentru a creea jar sau  ./gradlew bootRun pentru a rula fara a crea jar. 
+Build cu ./gradlew build pentru a compune jar-ul  sau  ./gradlew bootRun pentru a rula.
