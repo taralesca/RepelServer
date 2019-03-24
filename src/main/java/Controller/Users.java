@@ -10,7 +10,6 @@ public class Users {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer userID;
-
     private String username;
 
 	public Integer getId() {
