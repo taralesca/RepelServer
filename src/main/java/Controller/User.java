@@ -1,5 +1,7 @@
 package Controller;
 
+import org.springframework.security.core.userdetails.UserDetails;
+
 import javax.persistence.*;
 
 @Entity
@@ -8,13 +10,21 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int userID;
-	@Column(unique = true)
+	@Column(unique = true, name = "username")
     private String username;
+	private String password;
 	@Column(unique = true)
 	private String mail;
 
 	private int privilege;
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public int getId() {
 		return userID;
